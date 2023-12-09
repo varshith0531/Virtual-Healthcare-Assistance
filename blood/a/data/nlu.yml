@@ -1,0 +1,749 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: thank_y
+  examples: |
+    - thank you
+    - thanks
+    - you
+    - bye
+    - done
+    - good
+    - nice
+    - thank
+    - ok
+    - ok thanks
+    - ok sure
+    - sure
+- intent: pneumonia_info
+  examples: |
+    - pneumonia
+    - i am suffering with pneumonia
+    - i am having pneumonia
+    - pne
+    - pneu
+    - pneumonia disease
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+   
+- intent: diabetes_info
+  examples: |
+    - What is diabetes?
+    - Can you explain diabetes to me?
+    - Tell me about diabetes
+    - diabetes
+    - diabetes disease
+    - suffering with diabetes
+
+- intent: symptoms_info
+  examples: |
+    - What are the symptoms of diabetes?
+    - How can I recognize the symptoms of diabetes?
+    - What are the common signs of diabetes?
+
+- intent: diagnosis_info
+  examples: |
+    - How is diabetes diagnosed?
+    - What tests are used to diagnose diabetes?
+    - Can you explain the process of diagnosing diabetes?
+
+- intent: prevention_info
+  examples: |
+    - Can diabetes be prevented?
+    - What can I do to reduce the risk of diabetes?
+    - Are there any preventive measures for diabetes?
+
+- intent: complications_info
+  examples: |
+    - What are the complications associated with diabetes?
+    - Can you tell me about the long-term effects of diabetes?
+    - Are there any health risks associated with diabetes?
+
+- intent: diet_info
+  examples: |
+    - What kind of diet is recommended for people with diabetes?
+    - Can you provide some dietary guidelines for managing diabetes?
+    - How can I plan my meals to control blood sugar levels?
+
+- intent: exercise_info
+  examples: |
+    - How does exercise help in managing diabetes?
+    - What are some recommended exercises for people with diabetes?
+    - Can you suggest some physical activities for managing blood sugar levels?
+
+- intent: medications_info
+  examples: |
+    - What are the common medications used for diabetes?
+    - Can you tell me about insulin therapy?
+    - Are there any oral medications for managing diabetes?
+
+- intent: blood_sugar_info
+  examples: |
+    - How can I monitor my blood sugar levels at home?
+    - What is a normal blood sugar range for people with diabetes?
+    - Can you explain HbA1c and its significance in diabetes management?
+
+- intent: lifestyle_info
+  examples: |
+    - What lifestyle changes are recommended for diabetes management?
+    - How can I create a diabetes-friendly lifestyle plan?
+    - Are there any stress management techniques for people with diabetes?
+
+- intent: type1_diabetes_info
+  examples: |
+    - What is type 1 diabetes?
+    - How is type 1 diabetes different from type 2?
+    - Can you explain the autoimmune nature of type 1 diabetes?
+    - type 1
+    - type 1 diabetes
+    - 1
+    - type1
+    - typ1
+
+- intent: type2_diabetes_info
+  examples: |
+    - What is type 2 diabetes?
+    - What are the risk factors for developing type 2 diabetes?
+    - How can type 2 diabetes be managed without medication?
+    - type 2
+    - type 2 diabetes
+    - 2
+    - type2
+    - typ2
+
+- intent: gestational_diabetes_info
+  examples: |
+    - What is gestational diabetes?
+    - How is gestational diabetes managed during pregnancy?
+    - Can gestational diabetes increase the risk of type 2 diabetes later in life?
+
+- intent: insulin_info
+  examples: |
+    - How does insulin work in the body?
+    - What are the different types of insulin available?
+    - Can you explain insulin administration methods?
+
+- intent: complications_management_info
+  examples: |
+    - How can I manage diabetes-related complications?
+    - Are there treatments for diabetic neuropathy?
+    - Can you explain diabetic retinopathy management?
+
+- intent: foot_care_info
+  examples: |
+    - How should I take care of my feet if I have diabetes?
+    - What are the best practices for diabetic foot care?
+    - Can you provide tips for preventing foot ulcers?
+
+- intent: high_blood_sugar_causes
+  examples: |
+    - What can cause high blood sugar levels in diabetes?
+    - Why do my blood sugar levels spike after meals?
+    - Are there any lifestyle factors affecting blood sugar?
+
+- intent: low_blood_sugar_causes
+  examples: |
+    - What can cause low blood sugar in diabetes?
+    - How can I treat and prevent hypoglycemia?
+    - Can you explain the symptoms of low blood sugar?
+
+- intent: managing_stress
+  examples: |
+    - How does stress affect blood sugar levels?
+    - Can you suggest stress-relief techniques for diabetes management?
+    - What are some relaxation exercises I can try?
+
+- intent: handling_sick_days
+  examples: |
+    - How should I manage diabetes when I'm sick?
+    - Are there any specific precautions for sick days with diabetes?
+    - Can you explain sick day rules for insulin users?
+
+- intent: diabetes_management_tips
+  examples: |
+    - Can you provide some tips for managing diabetes effectively?
+    - How can I improve my diabetes management?
+    - What are the best practices for diabetes care?
+
+- intent: insulin_pump_info
+  examples: |
+    - What is an insulin pump, and how does it work?
+    - Can you explain the benefits of using an insulin pump for diabetes?
+    - Are there any considerations for insulin pump users?
+
+- intent: diabetes_support_groups
+  examples: |
+    - Are there any diabetes support groups in my area?
+    - Can you suggest online communities for people with diabetes?
+    - How can I connect with others managing diabetes?
+
+- intent: traveling_with_diabetes
+  examples: |
+    - What should I consider when traveling with diabetes?
+    - Are there any tips for managing diabetes while on vacation?
+    - How can I ensure I have all necessary supplies during travel?
+
+- intent: managing_blood_sugar_during_exercise
+  examples: |
+    - How can I prevent low blood sugar during exercise?
+    - What should I do if my blood sugar drops during physical activity?
+    - Can you provide guidelines for exercising with diabetes?
+
+- intent: diabetic_eye_care_info
+  examples: |
+    - How can I take care of my eyes if I have diabetes?
+    - Can diabetes affect my vision?
+    - What are the risks of diabetic retinopathy?
+
+- intent: dental_care_info
+  examples: |
+    - How does diabetes affect dental health?
+    - Are there any specific dental care tips for people with diabetes?
+    - Can diabetes cause gum problems?
+
+- intent: alcohol_and_diabetes
+  examples: |
+    - Is it safe to consume alcohol with diabetes?
+    - How does alcohol affect blood sugar levels?
+    - Can you provide guidelines for responsible alcohol consumption?
+
+- intent: smoking_and_diabetes
+  examples: |
+    - How does smoking impact diabetes?
+    - What are the risks of smoking for people with diabetes?
+    - Can quitting smoking improve diabetes management?
+
+- intent: pregnancy_and_diabetes
+  examples: |
+    - What should I know about managing diabetes during pregnancy?
+    - How can gestational diabetes affect the baby and mother?
+    - Can women with diabetes have a healthy pregnancy?
+
+- intent: dealing_with_emotions
+  examples: |
+    - How can I cope with the emotional challenges of living with diabetes?
+    - Are there any resources for mental health support for people with diabetes?
+    - Can stress affect blood sugar levels?
+
+# pneumonia
+
+- intent: ask_symptoms
+  examples: |
+    - What are the symptoms of pneumonia?
+    - Can you tell me the common symptoms of pneumonia?
+    - I'm worried about pneumonia symptoms. What should I look out for?
+    - What are the signs of pneumonia?
+
+- intent: ask_diagnosis
+  examples: |
+    - How is pneumonia diagnosed?
+    - What tests are used to diagnose pneumonia?
+    - Can you explain the diagnostic process for pneumonia?
+
+- intent: ask_treatment
+  examples: |
+    - What are the treatments for pneumonia?
+    - How is pneumonia treated?
+    - Can you tell me about pneumonia treatment options?
+
+- intent: ask_prevention
+  examples: |
+    - How can I prevent pneumonia?
+    - What are the preventive measures for pneumonia?
+    - Are there any vaccines available for pneumonia?
+#woooooooooooooooooooooooo
+- intent: mal_symptoms
+  examples: |
+    - What are the symptoms of malaria?
+    - I have a headache and fever. Could it be malaria?
+
+- intent: mal_treatment
+  examples: |
+    - How is malaria treated?
+    - What medications are used for malaria?
+
+- intent: mal_prevention
+  examples: |
+    - How can I prevent malaria?
+    - What are the best ways to avoid getting malaria?
+
+- intent: mal_diagnosis
+  examples: |
+    - How is malaria diagnosed?
+    - What tests are used to confirm malaria?
+
+- intent: risk_factors
+  examples: |
+    - Who is at higher risk of contracting malaria?
+    - Are pregnant women more susceptible to malaria?
+
+- intent: malaria_spread
+  examples: |
+    - How is malaria transmitted from one person to another?
+    - Can malaria spread through mosquito bites?
+
+- intent: malaria_types
+  examples: |
+    - What are the different types of malaria?
+    - Can you explain the different strains of malaria?
+
+- intent: medication_side_effects
+  examples: |
+    - What are the side effects of malaria medications?
+    - Are antimalarial drugs safe to use?
+
+- intent: home_remedies
+  examples: |
+    - Are there any home remedies for malaria?
+    - Can you suggest natural treatments for malaria?
+
+- intent: travel_advice
+  examples: |
+    - I'm traveling to a malaria-endemic area. What precautions should I take?
+    - can i travel outside with malaria?
+
+- intent: malaria_prevalence
+  examples: |
+    - How common is malaria globally?
+    - Which countries have the highest malaria prevalence rates?
+
+- intent: vaccine_information
+  examples: |
+    - Is there a vaccine for malaria?
+    - Can you tell me about the latest malaria vaccine research?
+
+- intent: malaria_vs_covid
+  examples: |
+    - What are the differences between malaria and COVID-19 symptoms?
+    - How is malaria different from COVID-19?
+
+- intent: malaria_complications
+  examples: |
+    - What are the potential complications of malaria?
+    - Can malaria lead to severe health issues?
+
+- intent: mosquito_breeding
+  examples: |
+    - How can I prevent mosquitoes from breeding around my home?
+    - What are common mosquito breeding sites?
+
+- intent: malaria_myths
+  examples: |
+    - What are some common myths about malaria?
+    - Can you debunk some malaria misconceptions?
+
+- intent: malaria_statistics
+  examples: |
+    - What are the latest malaria statistics for a specific country?
+    - Where can I find up-to-date malaria data?
+
+- intent: malaria_research
+  examples: |
+    - What are the latest advancements in malaria research?
+    - Can you provide information about ongoing malaria studies?
+
+- intent: insecticide_treated_nets
+  examples: |
+    - How do insecticide-treated nets help prevent malaria?
+    - Are there different types of mosquito nets available?
+
+- intent: malaria_in_children
+  examples: |
+    - What are the symptoms of malaria in children?
+    - How is malaria treated in young kids?
+
+- intent: malaria_transmission_seasonal
+  examples: |
+    - Is malaria transmission more common during certain seasons?
+    - How does seasonal variation affect malaria cases?
+
+- intent: malaria_diagnosis_methods
+  examples: |
+    - What are the different methods used to diagnose malaria?
+    - How is malaria diagnosed in healthcare settings?
+
+- intent: severe_malaria_symptoms
+  examples: |
+    - What are the signs of severe malaria?
+    - When should one seek urgent medical attention for malaria?
+
+- intent: herbal_malaria_treatments
+  examples: |
+    - Are there any herbal remedies effective in treating malaria?
+    - Can you suggest traditional malaria treatments?
+
+- intent: malaria_prevention_dos_donts
+  examples: |
+    - What are the do's and don'ts for malaria prevention?
+    - Can you provide a list of malaria prevention best practices?
+
+- intent: malaria_vaccine_availability
+  examples: |
+    - Is the malaria vaccine available worldwide?
+    - Where can I get the malaria vaccine?
+
+- intent: mosquito_species
+  examples: |
+    - What mosquito species are responsible for malaria transmission?
+    - Are all mosquitoes capable of transmitting malaria?
+
+- intent: malaria_recurring_infection
+  examples: |
+    - Can malaria infections recur after treatment?
+    - Why do some people experience recurring malaria?
+
+- intent: atovaquone_proguanil
+  examples: |
+    - What is atovaquone-proguanil, and how effective is it against malaria?
+    - Can you tell me more about the malaria medication atovaquone-proguanil?
+
+- intent: malaria_spread_indoor
+  examples: |
+    - Can malaria be transmitted indoors without mosquito bites?
+    - Is it possible to get malaria without being bitten by a mosquito?
+
+- intent: malaria_and_hiv
+  examples: |
+    - How does HIV infection affect the risk of malaria?
+    - Are people with HIV more susceptible to malaria?
+
+- intent: travel_vaccinations
+  examples: |
+    - Besides malaria, what other vaccinations are required for travel to malaria-endemic regions?
+    - Can you provide a list of recommended travel vaccinations?
+
+- intent: malaria_and_pregnancy_precautions
+  examples: |
+    - What precautions should pregnant women take to prevent malaria?
+    - Are antimalarial drugs safe for pregnant women?
+
+- intent: malaria_cases_global
+  examples: |
+    - How many malaria cases were reported globally last year?
+    - What is the current status of malaria cases worldwide?
+
+- intent: resistant_malaria_regions
+  examples: |
+    - Are there regions where malaria parasites are resistant to common treatments?
+    - Where can I find information on drug-resistant malaria?
+
+- intent: malaria_combination_therapy
+  examples: |
+    - What is artemisinin-based combination therapy (ACT) for malaria?
+    - How does ACT differ from other malaria treatments?
+
+- intent: malaria_testing_cost
+  examples: |
+    - How much does it cost to get tested for malaria?
+    - Are malaria tests covered by health insurance?
+
+- intent: malaria_campaigns
+  examples: |
+    - Are there any ongoing malaria eradication campaigns?
+    - How can I get involved in malaria prevention initiatives?
+
+- intent: malaria_and_climate_change
+  examples: |
+    - How is climate change affecting malaria transmission?
+    - Are there any predictions on malaria patterns due to climate change?
+
+- intent: malaria_prevention_insecticides
+  examples: |
+    - How do insecticides help in malaria prevention?
+    - Can you explain the role of insecticides in combating malaria?
+
+- intent: malaria_pregnancy_drugs
+  examples: |
+    - What antimalarial drugs are safe to use during pregnancy?
+    - Are there specific medications for pregnant women with malaria?
+
+- intent: malaria_symptoms_duration
+  examples: |
+    - How long do malaria symptoms typically last?
+    - What is the usual duration of a malaria infection?
+
+- intent: malaria_transfusion_transmission
+  examples: |
+    - Can malaria be transmitted through blood transfusions?
+    - Is there a risk of getting malaria from infected blood?
+
+- intent: malaria_and_anemia
+  examples: |
+    - Can malaria cause anemia?
+    - How does malaria lead to a decrease in hemoglobin levels?
+
+- intent: severe_malaria_treatment
+  examples: |
+    - What are the treatments for severe malaria?
+    - How is severe malaria managed in healthcare settings?
+
+- intent: malaria_sporozoites
+  examples: |
+    - What are malaria sporozoites?
+    - Can you explain the life cycle of malaria parasites?
+
+- intent: malaria_diagnostic_accuracy
+  examples: |
+    - How accurate are malaria diagnostic tests?
+    - Can rapid diagnostic tests sometimes give false results?
+- intent: co_symptoms
+  examples: |
+    - What are the symptoms of a cold?
+    - Can you tell me the common flu symptoms?
+    - What are the signs of a cold?
+    - I think I have the flu. What should I expect?
+
+- intent: co_prevention
+  examples: |
+    - How can I prevent catching a cold?
+    - What are some flu prevention tips?
+    - Any advice on avoiding the flu?
+
+- intent: co_treatment
+  examples: |
+    - What can I do to treat a cold?
+    - How to relieve flu symptoms?
+    - Should I see a doctor if I have the flu?
+
+- intent: co_contagious
+  examples: |
+    - Is a cold contagious?
+    - Can I spread the flu to others?
+
+- intent: co_duration
+  examples: |
+    - How long does a cold usually last?
+    - What is the typical duration of the flu?
+
+- intent: co_complications
+  examples: |
+    - Are there any complications associated with the flu?
+    - Can a cold lead to more severe health issues?
+
+- intent: co_home_remedies
+  examples: |
+    - What are some home remedies for cold relief?
+    - Can you suggest natural remedies for the flu?
+
+- intent: co_vaccination
+  examples: |
+    - Is there a flu vaccine available?
+    - Should I get a flu shot?
+
+- intent: co_immunity
+  examples: |
+    - How can I boost my immunity against cold and flu?
+    - Are there any supplements that can help prevent cold and flu?
+
+- intent: co_differences
+  examples: |
+    - What are the differences between a cold and the flu?
+    - How can I tell if I have a cold or the flu?
+
+- intent: co_weather_impact
+  examples: |
+    - Does cold weather make you more likely to catch a cold or flu?
+    - Can the weather affect the spread of cold and flu viruses?
+
+- intent: co_masks
+  examples: |
+    - Do masks help prevent the spread of cold and flu?
+    - Should I wear a mask to protect myself from catching a cold or the flu?
+
+- intent: co_medication_interaction
+  examples: |
+    - Are there any over-the-counter medications that can interact with flu prescriptions?
+    - Can I take specific cold medicines if I'm on other medications?
+
+- intent: ask_pregnancy_flu
+  examples: |
+    - Is it safe to take flu medications during pregnancy?
+    - Can the flu affect my unborn baby if I'm pregnant?
+
+- intent: ask_flu_shot_effectiveness
+  examples: |
+    - How effective is the flu shot at preventing the flu?
+    - Does the flu vaccine work against all strains of the flu?
+
+- intent: ask_flu_shot_recommendation
+  examples: |
+    - Who should get the flu shot?
+    - Is the flu vaccine recommended for children?
+
+- intent: co_self_care
+  examples: |
+    - What self-care measures can I take for cold and flu relief?
+    - Can you suggest some self-care tips for managing flu symptoms at home?
+
+- intent: co_travel_precautions
+  examples: |
+    - Should I take any precautions while traveling during cold and flu season?
+    - How can I protect myself from getting sick when traveling?
+
+- intent: ask_spread_through_air
+  examples: |
+    - Can cold and flu viruses spread through the air?
+    - Is it possible to catch a cold or the flu from someone who coughs or sneezes nearby?
+
+- intent: ask_compromised_immune_system
+  examples: |
+    - What should I do if I have a compromised immune system and get a cold or flu?
+    - Are there any additional precautions for people with weakened immune systems?
+
+- intent: ask_common_cold_or_allergies
+  examples: |
+    - How can I distinguish between a common cold and allergies?
+    - Are there any key differences in symptoms between the two?
+
+- intent: ask_flu_shot_side_effects
+  examples: |
+    - What are the potential side effects of the flu shot?
+    - Are there any adverse reactions I should watch out for after getting vaccinated?
+
+- intent: respiratory_disease_symptoms
+  examples: |
+    - What are the common symptoms of respiratory diseases?
+    - What are the signs of respiratory diseases?
+    - How do I know if I have a respiratory disease?
+    - List symptoms of respiratory diseases
+    - My breathing feels difficult. Could it be a respiratory problem?
+    - Are respiratory diseases contagious?
+    - I'm experiencing chest congestion. What could it be?
+    - Can you tell me about chronic respiratory disease symptoms?
+    - What are the early signs of respiratory issues?
+    - Are shortness of breath and fatigue common in respiratory diseases?
+    - How does respiratory distress differ from normal breathing difficulty?
+    - What are the symptoms of a respiratory infection?
+    - Is coughing up mucus a sign of respiratory problems?
+    - Can respiratory diseases cause hoarseness or voice changes?
+    - What is the link between respiratory diseases and allergies?
+    - Can respiratory issues worsen during specific seasons?
+
+- intent: respiratory_disease_causes
+  examples: |
+    - What causes respiratory diseases?
+    - Why do people get respiratory diseases?
+    - Tell me about the causes of respiratory diseases
+    - Can smoking lead to respiratory problems?
+    - Is air pollution a major factor in respiratory diseases?
+    - Are there genetic factors that make someone more prone to respiratory illnesses?
+    - How do allergies contribute to respiratory issues?
+    - Can occupational exposure lead to respiratory diseases?
+    - Does second-hand smoke increase the risk of respiratory problems?
+    - Can respiratory diseases be caused by viral infections?
+    - Are there any known environmental triggers for respiratory conditions?
+    - Can pets or pet dander worsen respiratory symptoms?
+    - What role does diet play in respiratory disease development?
+    - Are there specific respiratory diseases related to age or gender?
+    - How do certain medical conditions impact respiratory health?
+
+- intent: respiratory_disease_prevention
+  examples: |
+    - How can I prevent respiratory diseases?
+    - What are the preventive measures for respiratory diseases?
+    - Tips for avoiding respiratory diseases
+    - Should I wear a mask to protect against respiratory infections?
+    - Are there specific vaccines for respiratory diseases?
+    - How can I improve indoor air quality to prevent respiratory issues?
+    - What lifestyle changes can help reduce the risk of respiratory diseases?
+    - Is there a connection between diet and respiratory health?
+    - Can regular exercise strengthen the respiratory system?
+    - Are there any vitamins or supplements that promote respiratory health?
+    - What are the best practices for managing allergies and asthma triggers?
+    - Can environmental changes at home improve respiratory health?
+    - Are there breathing techniques for anxiety-related respiratory symptoms?
+    - How does proper hand hygiene reduce the risk of respiratory infections?
+    - Are there workplace measures to prevent occupational respiratory issues?
+
+- intent: respiratory_disease_treatment
+  examples: |
+    - How are respiratory diseases treated?
+    - What are the treatment options for respiratory diseases?
+    - Can you suggest some treatments for respiratory diseases?
+    - Are there natural remedies for respiratory problems?
+    - How long does it take to recover from a respiratory illness?
+    - Tell me more about managing asthma symptoms.
+    - What are the latest advancements in treating respiratory diseases?
+    - Can meditation or relaxation techniques help with respiratory conditions?
+    - Is there a cure for chronic obstructive pulmonary disease (COPD)?
+    - What role does physical therapy play in respiratory disease management?
+    - Can certain foods or supplements alleviate respiratory symptoms?
+    - Are there targeted therapies for specific respiratory conditions?
+    - How do doctors decide between inhalers and nebulizers for treatment?
+    - What is the role of immunotherapy in respiratory disease treatment?
+
+- intent: respiratory_disease_diagnosis
+  examples: |
+    - How are respiratory diseases diagnosed?
+    - What is the process of diagnosing respiratory diseases?
+    - How do doctors determine respiratory diseases?
+    - What tests are used to diagnose respiratory problems?
+    - How is sleep apnea diagnosed?
+    - Can you explain how pulmonary function tests work?
+    - Are there specific criteria for diagnosing respiratory allergies?
+    - How can doctors differentiate between asthma and other respiratory issues?
+    - Can an X-ray detect all types of respiratory diseases?
+    - What is involved in a lung biopsy procedure?
+    - How do doctors diagnose lung cancer or other lung diseases?
+    - Are there non-invasive diagnostic methods for respiratory conditions?
+    - Can telemedicine be used for respiratory disease diagnosis?
+    - What role do genetic tests play in diagnosing respiratory disorders?
+
+- intent: respiratory_disease_management
+  examples: |
+    - How can I manage respiratory diseases?
+    - Tips for living with respiratory diseases
+    - Self-care strategies for respiratory diseases
+    - Can I exercise with a respiratory condition?
+    - What lifestyle changes can help improve respiratory health?
+    - How do I properly use an inhaler?
+    - What are the best breathing exercises for respiratory health?
+    - Can you suggest resources or support groups for respiratory disease patients?
+    - Are there specific diets that can support respiratory health?
+    - How does stress management affect respiratory conditions?
+    - What are the benefits of pulmonary rehabilitation programs?
+    - Are there assistive devices or technologies for respiratory support?
+    - How can family members support individuals with respiratory conditions?
+    - Are there travel tips for individuals with respiratory issues?
+    - What should I do during an asthma or allergy attack?
+
+- intent: medication_management
+  examples: |
+    - How should I take my respiratory medications?
+    - What are the potential side effects of respiratory medications?
+    - Can I combine different respiratory medications?
+    - Are there any alternative medications for respiratory conditions?
+    - What should I do if I miss a dose of my medication?
+    - Is it safe to use over-the-counter cough medicine for respiratory issues?
+    - Can herbal supplements interact with prescribed respiratory drugs?
+    - How do I store and handle my respiratory medications properly?
+    - Are there new or emerging medications for respiratory diseases?

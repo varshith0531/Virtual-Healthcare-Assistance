@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacy - Cold and Flu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav> 
+        </div>
+        </div>
+    </div>
+    <div id="content">
+        <h1>Cold and Flu</h1>
+        <h2>Tablets for Cold and Flu</h2>
+        <table id="cart-table-disease">
+            <tr>
+                <th>Tablet Name</th>
+                <th>Strength</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Paracetamol</td>
+                <td>500mg</td>
+                <td>$8</td>
+                <td><img src="Paracetamol 500 mg.jpg" alt="Paracetamol"></td>
+                <td><button onclick="addToCart('Paracetamol', '500mg', 8, 'Paracetamol 500 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Ibuprofen</td>
+                <td>400mg</td>
+                <td>$10</td>
+                <td><img src="IBUPROFEN 400 mg.jpg" alt="Ibuprofen"></td>
+                <td><button onclick="addToCart('Ibuprofen', '400mg', 10, 'IBUPROFEN 400 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Aspirin</td>
+                <td>325mg</td>
+                <td>$9</td>
+                <td><img src="Aspirin 325mg.jpg" alt="Aspirin"></td>
+                <td><button onclick="addToCart('Aspirin', '325mg', 9, 'Aspirin 325mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Chlorpheniramine</td>
+                <td>4mg</td>
+                <td>$12</td>
+                <td><img src="Chloroquine 250mg.jpg" alt="Chlorpheniramine"></td>
+                <td><button onclick="addToCart('Chlorpheniramine', '4mg', 12, 'Chloroquine 250mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Dextromethorphan</td>
+                <td>15mg</td>
+                <td>$11</td>
+                <td><img src="dextromethorphan 15mg.jpg" alt="Dextromethorphan"></td>
+                <td><button onclick="addToCart('Dextromethorphan', '15mg', 11, 'dextromethorphan 15mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Phenylephrine</td>
+                <td>10mg</td>
+                <td>$13</td>
+                <td><img src="Phenylephrine 10mg.jpg" alt="Phenylephrine"></td>
+                <td><button onclick="addToCart('Phenylephrine', '10mg', 13, 'Phenylephrine 10mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Guaifenesin</td>
+                <td>200mg</td>
+                <td>$14</td>
+                <td><img src="GUAIFENESIN 200 mg.jpg" alt="Guaifenesin"></td>
+                <td><button onclick="addToCart('Guaifenesin', '200mg', 14, 'GUAIFENESIN 200 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Rimantadine</td>
+                <td>100mg</td>
+                <td>$18</td>
+                <td><img src="Rimantadine 100 mg.jpg" alt="Rimantadine"></td>
+                <td><button onclick="addToCart('Rimantadine', '100mg', 18, 'Rimantadine 100 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Pseudoephedrine</td>
+                <td>60mg</td>
+                <td>$15</td>
+                <td><img src="pSEUDOEPHEDRINE 60mg.jpg" alt="Pseudoephedrine"></td>
+                <td><button onclick="addToCart('Pseudoephedrine', '60mg', 15, 'pSEUDOEPHEDRINE 60mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Acetaminophen</td>
+                <td>325mg</td>
+                <td>$9</td>
+                <td><img src="acetaminophen 325 mg.jpg" alt="Acetaminophen"></td>
+                <td><button onclick="addToCart('Acetaminophen', '325mg', 9, 'acetaminophen 325 mg.jpg')">Add to Cart</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,547 @@
+version: "3.1"
+
+intents:
+  - say_disease
+  - pred
+  - phar
+  - greet
+  - mood_great
+  - diabetes_info
+  - dia_app
+  - dia_medi
+  - dia_pla
+  - symptoms_info
+  - diagnosis_info
+  - prevention_info
+  - complications_info
+  - diet_info
+  - exercise_info
+  - medications_info
+  - blood_sugar_info
+  - lifestyle_info
+  - type1_diabetes_info
+  - type2_diabetes_info
+  - gestational_diabetes_info
+  - insulin_info
+  - complications_management_info
+  - foot_care_info
+  - high_blood_sugar_causes
+  - low_blood_sugar_causes
+  - managing_stress
+  - handling_sick_days
+  - diabetes_management_tips
+  - insulin_pump_info
+  - diabetes_support_groups
+  - traveling_with_diabetes
+  - managing_blood_sugar_during_exercise
+  - diabetic_eye_care_info
+  - dental_care_info
+  - alcohol_and_diabetes
+  - smoking_and_diabetes
+  - pregnancy_and_diabetes
+  - dealing_with_emotions
+  - ask_symptoms
+  - ask_diagnosis
+  - ask_treatment
+  - ask_prevention
+  - mal_symptoms
+  - mal_treatment
+  - mal_prevention
+  - mal_diagnosis
+  - risk_factors
+  - malaria_spread
+  - malaria_types
+  - medication_side_effects
+  - home_remedies
+  - travel_advice
+  - malaria_prevalence
+  - vaccine_information
+  - malaria_vs_covid
+  - malaria_complications
+  - mosquito_breeding
+  - malaria_myths
+  - malaria_statistics
+  - malaria_research
+  - insecticide_treated_nets
+  - malaria_in_children
+  - malaria_transmission_seasonal
+  - malaria_diagnosis_methods
+  - severe_malaria_symptoms
+  - herbal_malaria_treatments
+  - malaria_prevention_dos_donts
+  - malaria_vaccine_availability
+  - mosquito_species
+  - malaria_recurring_infection
+  - atovaquone_proguanil
+  - malaria_spread_indoor
+  - malaria_and_hiv
+  - travel_vaccinations
+  - malaria_and_pregnancy_precautions
+  - malaria_cases_global
+  - resistant_malaria_regions
+  - malaria_combination_therapy
+  - malaria_testing_cost
+  - malaria_campaigns
+  - malaria_and_climate_change
+  - malaria_prevention_insecticides
+  - malaria_pregnancy_drugs
+  - malaria_symptoms_duration
+  - malaria_transfusion_transmission
+  - malaria_and_anemia
+  - severe_malaria_treatment
+  - malaria_sporozoites
+  - malaria_diagnostic_accuracy
+  - co_symptoms
+  - co_prevention
+  - co_treatment
+  - co_contagious
+  - co_duration
+  - co_complications
+  - co_home_remedies
+  - co_vaccination
+  - co_immunity
+  - co_differences
+  - co_weather_impact
+  - co_masks
+  - co_medication_interaction
+  - ask_pregnancy_flu
+  - ask_flu_shot_effectiveness
+  - ask_flu_shot_recommendation
+  - co_self_care
+  - co_travel_precautions
+  - ask_spread_through_air
+  - ask_compromised_immune_system
+  - ask_common_cold_or_allergies
+  - ask_flu_shot_side_effects
+  - respiratory_disease_symptoms
+  - respiratory_disease_causes
+  - respiratory_disease_prevention
+  - respiratory_disease_treatment
+  - respiratory_disease_diagnosis
+  - respiratory_disease_management
+  - medication_management
+  - covid_19_concerns
+  - respiratory_disease_research
+  - personal_respiratory_history
+  - environmental_exposure_concerns
+  - dia_apollo
+  - dia_medp
+  - pred_site
+  - thank_y
+  - cont
+  - byee
+  - pne_app
+  - pne_medi
+  - pne_pla
+  - pneumonia_info
+  - action_store_chat_conversation
+responses:
+  utter_greet:
+    - buttons:
+        - title: Disease
+          payload: /say_disease
+        - title: Prediction
+          payload: /pred
+        - title: Pharmacy
+          payload: /phar
+      text: Hey! there. How can I help you?
+  utter_say_disease:
+    - text: "which disease are you suffering from?"
+
+  utter_thank_y:
+    - buttons:
+        - title: yes
+          payload: /cont
+        - title: no
+          payload: /byee
+      text: "great! hope that helps click yes to continue"
+  utter_cont:
+    - buttons:
+        - title: Disease
+          payload: /say_disease
+        - title: Prediction
+          payload: /pred
+        - title: Pharmacy
+          payload: /phar
+      text: "Explore our services"
+  utter_byee:
+    - text: "have a great day! please rate us:<a href='https://forms.gle/6i71Fzu4v5APjvNp8'target='_blank' style='color: blue'><u>Feedback</u></a>"
+  utter_pred:
+    - text: "Please check your disease using:  <a href='http://127.0.0.1:8080/'target='_blank' style='color: blue'><u>Hyegia Prediction</u></a>"
+  utter_phar:
+    - text: "Here are some useful medicines:  <a href='pharmacy'target='_blank' style='color: blue'><u>Hyegia Pharmacy</u></a>"
+  utter_happy:
+    - text: "great carry on"
+  #diabetes
+  utter_diabetes_info:
+    - buttons:
+        - title: Doctor appointment
+          payload: /dia_app
+        - title: Medication
+          payload: /dia_medi
+        - title: Diet plans
+          payload: /dia_pla
+      text: "Diabetes is a chronic illness that has an impact on how your body utilizes blood sugar."
+
+  utter_dia_app:
+    - text: "Here you can book your appointment:  <a href='doctor'target='_blank' style='color: blue'><u>Hyegia Doctor</u></a>"
+  utter_dia_medi:
+    - text: "Here are some useful medicines for Diabetes:  <a href='pharmacy/diabetes.html'target='_blank' style='color: blue'><u>Hyegia Medicine</u></a>"
+  utter_dia_pla:
+    - text: "Here are some diet plan suggestions for Diabetes:  <a href='diet/diet.html'target='_blank' style='color: blue'><u>hyegia diet plans</u></a>"
+
+  utter_symptoms_info:
+    - text: "Common symptoms of diabetes include increased thirst, frequent urination, unexplained weight loss, fatigue, blurred vision, slow-healing wounds, and frequent infections."
+
+  utter_diagnosis_info:
+    - text: "Diabetes is typically diagnosed through blood tests that measure blood glucose levels, such as fasting blood sugar tests, oral glucose tolerance tests, or HbA1c tests."
+
+  utter_prevention_info:
+    - text: "While type 1 diabetes cannot be prevented, type 2 diabetes can often be prevented or delayed through maintaining a healthy lifestyle, including regular physical activity and a balanced diet."
+
+  utter_complications_info:
+    - text: "Diabetes can lead to complications such as heart disease, stroke, kidney disease, nerve damage, vision problems, foot complications, and skin conditions."
+
+  utter_diet_info:
+    - text: "A healthy diet for diabetes focuses on consuming balanced meals with appropriate carbohydrate intake, portion control, and emphasis on whole foods. It's important to consult a healthcare professional or a dietitian for personalized dietary advice."
+
+  utter_exercise_info:
+    - text: "Regular exercise helps lower blood sugar levels, improve insulin sensitivity, and maintain a healthy weight. It's recommended to engage in moderate aerobic exercises, such as brisk walking or cycling, for at least 150 minutes per week."
+
+  utter_medications_info:
+    - text: "Common medications for diabetes include insulin (for both type 1 and some type 2), oral medications (such as metformin, sulfonylureas, and DPP-4 inhibitors), and injectable medications (like GLP-1 receptor agonists). The choice of medication depends on the type of diabetes and individual factors."
+
+  utter_blood_sugar_info:
+    - text: "You can monitor your blood sugar levels at home using a glucometer. A normal blood sugar range for people with diabetes is usually between 80-130 mg/dL (4.4-7.2 mmol/L) before meals and below 180 mg/dL (10 mmol/L) after meals. HbA1c is a test that measures average blood sugar levels over the past 2-3 months and is an essential tool in diabetes management."
+
+  utter_lifestyle_info:
+    - text: "For diabetes management, lifestyle changes should include a balanced diet, regular physical activity, stress management, and adequate sleep. Staying physically active and maintaining a healthy weight are crucial components of a diabetes-friendly lifestyle."
+
+  utter_type1_diabetes_info:
+    - text: "Type 1 diabetes is an autoimmune condition in which the body's immune system attacks and destroys insulin-producing cells in the pancreas. People with type 1 diabetes require insulin therapy to manage their blood sugar levels since their bodies do not produce insulin."
+
+  utter_type2_diabetes_info:
+    - text: "Type 2 diabetes is a metabolic disorder characterized by insulin resistance and impaired insulin production. It is often associated with lifestyle factors such as obesity, physical inactivity, and genetics. Type 2 diabetes can be managed through lifestyle changes, medication, and insulin therapy if needed."
+
+  utter_gestational_diabetes_info:
+    - text: "Gestational diabetes occurs during pregnancy when the body cannot produce enough insulin to meet the increased demands. It usually resolves after childbirth, but women with gestational diabetes are at higher risk of developing type 2 diabetes later in life."
+
+  utter_insulin_info:
+    - text: "Insulin is a hormone that helps regulate blood sugar levels. It allows cells to take up glucose from the bloodstream to use it for energy. Insulin can be administered through injections or insulin pumps, and the type and dosage are prescribed based on individual needs."
+
+  utter_complications_management_info:
+    - text: "Managing diabetes-related complications involves regular medical checkups, adhering to treatment plans, maintaining a healthy lifestyle, and following the advice of healthcare professionals."
+
+  utter_foot_care_info:
+    - text: "Proper foot care is crucial for people with diabetes to prevent foot ulcers and infections. Regularly inspect your feet, keep them clean and moisturized, wear comfortable shoes, and avoid going barefoot."
+
+  utter_high_blood_sugar_causes:
+    - text: "High blood sugar levels in diabetes can be caused by factors such as consuming high-carbohydrate foods, insufficient insulin dosage, stress, illness, and lack of physical activity."
+
+  utter_low_blood_sugar_causes:
+    - text: "Low blood sugar (hypoglycemia) can occur due to too much insulin or diabetes medication, skipping meals, engaging in intense physical activity without adjusting medication, or drinking alcohol without food."
+
+  utter_managing_stress:
+    - text: "Stress can affect blood sugar levels, so managing stress is essential for diabetes management. Techniques such as deep breathing, meditation, yoga, and regular exercise can help reduce stress."
+
+  utter_handling_sick_days:
+    - text: "During sick days, it's important to monitor blood sugar levels frequently, stay hydrated, continue taking medications (unless advised otherwise by a healthcare professional), and consume easy-to-digest foods."
+
+  utter_diabetes_management_tips:
+    - text: "To effectively manage diabetes, consider the following tips: monitor blood sugar levels regularly, follow a balanced diet, stay physically active, take medications as prescribed, manage stress, get enough sleep, and attend regular medical checkups."
+
+  utter_insulin_pump_info:
+    - text: "An insulin pump is a small device that delivers insulin continuously through a catheter placed under the skin. It provides a more flexible and precise way of delivering insulin, and users can adjust insulin doses to match their lifestyle and needs."
+
+  utter_diabetes_support_groups:
+    - text: "Joining diabetes support groups can be beneficial for emotional support, sharing experiences, and learning from others. Look for local support groups or online communities dedicated to diabetes management."
+
+  utter_traveling_with_diabetes:
+    - text: "When traveling with diabetes, pack extra diabetes supplies, carry snacks to manage blood sugar levels, keep insulin at the right temperature, wear comfortable shoes, and have a travel plan for medical emergencies."
+
+  utter_managing_blood_sugar_during_exercise:
+    - text: "To manage blood sugar during exercise, check your levels before, during, and after physical activity. Adjust your insulin or food intake as needed, stay hydrated, and always carry a source of fast-acting glucose in case of low blood sugar."
+
+  utter_diabetic_eye_care_info:
+    - text: "Diabetic eye care is essential to prevent vision problems associated with diabetes. Regular eye exams are crucial, as diabetes can lead to diabetic retinopathy, cataracts, and glaucoma. Managing blood sugar levels and keeping blood pressure and cholesterol under control can help protect your eyes."
+
+  utter_dental_care_info:
+    - text: "Diabetes can affect dental health, increasing the risk of gum disease and dental infections. To maintain dental health, brush and floss regularly, visit the dentist for regular check-ups, and inform your dentist about your diabetes."
+
+  utter_alcohol_and_diabetes:
+    - text: "If you have diabetes, it's essential to consume alcohol in moderation. Alcohol can affect blood sugar levels, and it's important to check your levels regularly. Consult your healthcare provider for guidance on alcohol consumption and its impact on your diabetes management."
+
+  utter_smoking_and_diabetes:
+    - text: "Smoking is harmful to health, especially for people with diabetes. Smoking can worsen diabetes complications and increase the risk of heart disease and other health issues. Quitting smoking can significantly improve your overall health and diabetes management."
+
+  utter_pregnancy_and_diabetes:
+    - text: "Managing diabetes during pregnancy requires close monitoring of blood sugar levels. Gestational diabetes can affect both the mother and the baby's health, but with proper care, women with diabetes can have a healthy pregnancy. Regular prenatal check-ups are essential for diabetes management during pregnancy."
+
+  utter_dealing_with_emotions:
+    - text: "Living with diabetes can be emotionally challenging. It's essential to seek support from loved ones, join diabetes support groups, and consider professional help if needed. Stress can affect blood sugar levels, so managing emotions is an important aspect of diabetes care."
+  #pnuemo
+
+  utter_pneumonia_info:
+    - buttons:
+        - title: Doctor appointment
+          payload: /pne_app
+        - title: Medication suggestions
+          payload: /pne_medi
+        - title: Diet plans
+          payload: /pne_pla
+      text: "Pneumonia is an infection that affects one or both lungs."
+
+  utter_pne_app:
+    - text: "Please book your appointment using:  <a href='doctor'target='_blank' style='color: blue'><u>Hyegia Doctor</u></a>"
+  utter_pne_medi:
+    - text: "Here are some medicines you can access using:  <a href='pharmacy/pnemonia.html'target='_blank' style='color: blue'><u>Hyegia Pharmacy</u></a>"
+  utter_pne_pla:
+    - text: "Here are some general tips for a pnemonia-friendly diet:"
+    - text: "1.Drink plenty of fluids, such as water, herbal teas, and clear broths, to stay hydrated"
+    - text: "2.Lean sources of protein like chicken, fish, tofu, beans, and lentils."
+    - text: "3.Whole grains like brown rice, quinoa, oats, and whole wheat bread."
+    - text: "4.Foods containing zinc, such as legumes, whole grains, nuts, and seeds, may support immune function."
+    - text: "5.These natural ingredients may have antimicrobial properties and can be beneficial in supporting the immune system."
+
+  utter_pneumonia_symptoms:
+    - text: "The common symptoms of pneumonia include fever, cough, shortness of breath, chest pain, fatigue, and sometimes, confusion."
+
+  utter_pneumonia_diagnosis:
+    - text: "Pneumonia is typically diagnosed through physical examination, chest X-rays, and sometimes, blood tests or sputum cultures."
+
+  utter_pneumonia_treatment:
+    - text: "Pneumonia is often treated with antibiotics, rest, and plenty of fluids. In severe cases, hospitalization may be required."
+
+  utter_pneumonia_prevention:
+    - text: "To prevent pneumonia, it's essential to practice good hygiene, get vaccinated, avoid smoking, and maintain a healthy lifestyle."
+
+  utter_provide_malaria_symptoms:
+    - text: "The common symptoms of malaria include fever, headache, chills, and muscle aches."
+
+  utter_provide_malaria_treatment:
+    - text: "Malaria is typically treated with antimalarial medications prescribed by a healthcare professional."
+
+  utter_provide_malaria_prevention_tips:
+    - text: "To prevent malaria, you should use mosquito nets while sleeping, wear long-sleeved clothing, and use insect repellents. Additionally, eliminate standing water where mosquitoes breed."
+
+  utter_explain_malaria_diagnosis_process:
+    - text: "Malaria is diagnosed through blood tests, such as a rapid diagnostic test (RDT) or a blood smear under a microscope, to detect the presence of malaria parasites."
+
+  utter_describe_malaria_risk_factors:
+    - text: "Certain factors increase the risk of malaria, including living in or traveling to malaria-endemic regions, lack of immunity, and certain medical conditions."
+
+  utter_explain_malaria_spread:
+    - text: "Malaria is primarily spread through the bites of infected female Anopheles mosquitoes. It cannot spread directly from person to person."
+
+  utter_explain_malaria_types:
+    - text: "Malaria is caused by several species of Plasmodium parasites. The most common types are Plasmodium falciparum, Plasmodium vivax, Plasmodium ovale, and Plasmodium malariae."
+
+  utter_describe_medication_side_effects:
+    - text: "Antimalarial medications may have side effects such as nausea, vomiting, dizziness, or skin rashes. Consult a healthcare professional for appropriate guidance."
+
+  utter_provide_home_remedies_for_malaria:
+    - text: "While there are some traditional home remedies for malaria, such as herbal teas, these are not proven to be effective treatments. Seek medical attention for proper care."
+
+  utter_provide_malaria_travel_advice:
+    - text: "If you're traveling to a malaria-endemic area, take preventive measures, such as taking antimalarial medication prescribed by a doctor and using mosquito repellents."
+
+  utter_explain_malaria_prevalence:
+    - text: "Malaria is a significant public health concern in many tropical and subtropical regions. It is estimated that there were around 229 million cases and 409,000 malaria-related deaths in 2019."
+
+  utter_provide_malaria_vaccine_info:
+    - text: "As of my last update, there is no commercially available malaria vaccine, but research is ongoing. The most advanced vaccine candidate is RTS,S, which has been piloted in several African countries."
+
+  utter_compare_malaria_and_covid_symptoms:
+    - text: "Malaria and COVID-19 are caused by different pathogens and have distinct symptoms. Malaria typically presents with fever, chills, and flu-like symptoms, while COVID-19 often involves cough, shortness of breath, and loss of taste or smell."
+
+  utter_recommend_mosquito_repellents:
+    - text: "Effective mosquito repellents against malaria vectors contain ingredients like DEET, picaridin, or oil of lemon eucalyptus. Always follow the product's instructions for safe use."
+
+  utter_explain_malaria_and_pregnancy:
+    - text: "Malaria can pose risks to pregnant women and their babies, such as an increased risk of anemia and low birth weight. Pregnant women should consult their healthcare provider before traveling to malaria-endemic areas."
+
+  utter_describe_malaria_prevention_drugs:
+    - text: "Common malaria prevention drugs include chloroquine, doxycycline, and mefloquine. The choice of medication depends on the travel destination and individual health factors."
+
+  utter_check_malaria_outbreak_status:
+    - text: "To find information about current malaria outbreaks in specific countries, refer to the WHO or CDC websites or consult with relevant health authorities."
+
+  utter_provide_malaria_research_info:
+    - text: "Malaria research is continuously evolving. Some recent advancements include genetic studies to understand drug resistance and the development of new vaccine candidates."
+
+  utter_explain_insecticide_treated_nets:
+    - text: "Insecticide-treated nets are designed to repel and kill mosquitoes. They form a physical barrier and provide added protection against malaria-transmitting mosquitoes during sleep."
+
+  utter_describe_malaria_in_children:
+    - text: "Malaria symptoms in children are similar to those in adults but can progress more rapidly. Treatment typically involves antimalarial medications suitable for the child's age and weight."
+
+  utter_explain_seasonal_malaria_transmission:
+    - text: "Malaria transmission can be affected by seasonal changes. In some regions, transmission may increase during the rainy season due to more breeding sites for mosquitoes."
+
+  utter_explain_malaria_diagnosis_methods:
+    - text: "Malaria can be diagnosed through various methods, including microscopic examination of blood smears, rapid diagnostic tests (RDTs), and molecular techniques like PCR."
+
+  utter_describe_severe_malaria_symptoms:
+    - text: "Severe malaria may present with symptoms such as high fever, impaired consciousness, respiratory distress, and jaundice. Seek immediate medical attention if these signs are observed."
+
+  utter_discuss_herbal_malaria_treatments:
+    - text: "While some traditional herbal remedies are used in some communities, their effectiveness in treating malaria is not well-established. Medical treatment with antimalarial drugs is the recommended approach."
+
+  utter_provide_malaria_prevention_dos_donts:
+    - text: "For malaria prevention, do use insecticide-treated nets, apply mosquito repellent, wear protective clothing, and stay indoors during peak mosquito activity. Don't ignore symptoms or use ineffective remedies."
+
+  utter_explain_malaria_vaccine_availability:
+    - text: "The malaria vaccine, RTS,S, is recommended for children in selected African countries. Its availability may vary, and you should consult with healthcare providers or clinics for local vaccine access."
+
+  utter_describe_mosquito_species_transmission:
+    - text: "Malaria is primarily transmitted by female Anopheles mosquitoes. Not all mosquito species can transmit malaria; it depends on the presence of malaria parasites in the mosquito's salivary glands."
+
+  utter_explain_malaria_recurring_infection:
+    - text: "In some cases, malaria infections can recur due to the presence of dormant parasites in the liver. This is called a relapse. Proper treatment and follow-up are crucial to prevent recurrences."
+
+  utter_explain_atovaquone_proguanil:
+    - text: "Atovaquone-proguanil is a combination medication used for malaria prevention and treatment. It is effective against certain malaria strains and is often prescribed for travelers to endemic areas."
+
+  utter_discuss_malaria_spread_indoors:
+    - text: "Malaria transmission typically occurs through mosquito bites. While rare, it is possible for malaria to be transmitted indoors if infected mosquitoes enter the living spaces."
+
+  utter_explain_malaria_and_hiv:
+    - text: "HIV infection can increase the risk of severe malaria in co-infected individuals. People with weakened immune systems, such as those with HIV, may experience more severe malaria symptoms."
+
+  utter_provide_travel_vaccination_info:
+    - text: "In addition to malaria, other recommended travel vaccinations may include yellow fever, typhoid, hepatitis A and B, and meningococcal vaccines. Consult a travel health clinic for personalized advice."
+
+  utter_explain_malaria_precautions_pregnancy:
+    - text: "Pregnant women should take extra precautions to avoid mosquito bites, such as sleeping under insecticide-treated nets and wearing protective clothing. Antimalarial drugs safe for pregnancy can be prescribed by healthcare providers."
+
+  utter_provide_global_malaria_cases:
+    - text: "Malaria cases worldwide can vary from year to year. For the latest data, refer to the World Health Organization (WHO) malaria reports or other authoritative health organizations."
+
+  utter_explain_drug_resistant_malaria_regions:
+    - text: "Drug-resistant malaria has been reported in certain regions, particularly in Southeast Asia. Health authorities and the WHO monitor and provide information on such areas."
+
+  utter_explain_malaria_combination_therapy:
+    - text: "Artemisinin-based combination therapy (ACT) is a frontline treatment for uncomplicated malaria. It combines artemisinin derivatives with other antimalarial drugs to improve treatment efficacy and reduce resistance."
+
+  utter_describe_malaria_testing_cost:
+    - text: "The cost of malaria testing can vary depending on the type of test and the healthcare provider. Some tests may be covered by health insurance, while others may require out-of-pocket payments."
+
+  utter_provide_malaria_campaign_info:
+    - text: "Various organizations and governments run malaria eradication campaigns. You can get involved by supporting or volunteering with organizations working to prevent and control malaria."
+
+  utter_explain_malaria_and_climate_change:
+    - text: "Climate change can impact malaria transmission by affecting mosquito breeding habitats and extending the malaria transmission season. Predictions suggest shifts in malaria patterns due to changing climates."
+
+  utter_explain_malaria_prevention_insecticides:
+    - text: "Insecticides are used to control mosquito populations, especially in malaria-endemic areas. They can be applied to bed nets, indoor walls, and other mosquito resting sites to reduce transmission."
+
+  utter_describe_malaria_drugs_during_pregnancy:
+    - text: "Certain antimalarial drugs, like chloroquine and mefloquine, are considered safe for pregnant women with malaria. However, the choice of medication should be based on individual circumstances."
+
+  utter_explain_malaria_symptoms_duration:
+    - text: "Malaria symptoms can last from a few days to several weeks, depending on the malaria species and the individual's immune response. Timely treatment can shorten the duration."
+
+  utter_discuss_malaria_transfusion_transmission:
+    - text: "Malaria can be transmitted through blood transfusions if the donor's blood is infected. Blood screening and careful testing are essential to prevent transfusion-transmitted malaria."
+
+  utter_explain_malaria_and_anemia:
+    - text: "Malaria can cause anemia, which is a decrease in red blood cells or hemoglobin levels. The malaria parasites can destroy red blood cells, leading to anemia in severe cases."
+
+  utter_describe_severe_malaria_treatment:
+    - text: "Severe malaria is a medical emergency. Treatment often involves intravenous administration of antimalarial drugs like quinine or artesunate in a hospital setting."
+
+  utter_explain_malaria_sporozoites_life_cycle:
+    - text: "Malaria sporozoites are the infective form of the malaria parasite that are transmitted to humans through mosquito bites. The life cycle involves stages in both mosquitoes and humans."
+
+  utter_discuss_malaria_diagnostic_accuracy:
+    - text: "Malaria diagnostic tests, including rapid diagnostic tests (RDTs) and microscopic examination, have varying levels of accuracy. False-negative or false-positive results can occur, but RDTs are generally reliable."
+
+  utter_co_symptoms:
+    - text: "Common cold symptoms include sneezing, runny nose, sore throat, and coughing. Flu symptoms may include fever, chills, body aches, fatigue, and headache."
+
+  utter_co_prevention:
+    - text: "To prevent catching a cold or flu, wash your hands frequently, avoid close contact with sick individuals, and maintain a healthy lifestyle with proper nutrition and exercise."
+
+  utter_co_treatment:
+    - text: "For cold relief, get plenty of rest, stay hydrated, and use over-the-counter medications for symptom management. For the flu, antiviral medications may be prescribed, and rest and fluids are essential."
+
+  utter_co_contagious:
+    - text: "Yes, a cold and flu are both contagious. They can spread through droplets from coughs and sneezes or by touching contaminated surfaces."
+
+  utter_co_duration:
+    - text: "A cold typically lasts for about 7 to 10 days. The flu may last 1 to 2 weeks, but severe symptoms can last longer."
+
+  utter_co_complications:
+    - text: "In some cases, the flu can lead to complications like pneumonia, bronchitis, or sinus infections. Cold-related complications are less common but can include ear infections."
+
+  utter_co_home_remedies:
+    - text: "For cold relief, try drinking warm fluids, using a humidifier, and using saline nasal drops. For the flu, rest, staying warm, and drinking fluids can help. Consult a doctor for persistent symptoms."
+
+  utter_co_vaccination:
+    - text: "Yes, there is a flu vaccine available. It's recommended to get a flu shot annually to protect yourself and others from the virus."
+
+  utter_co_immunity:
+    - text: "To boost your immunity against cold and flu, maintain a balanced diet, exercise regularly, get enough sleep, and consider taking vitamin C or zinc supplements. However, consult a healthcare professional before starting any new supplements."
+
+  utter_co_differences:
+    - text: "Colds and the flu share some symptoms, but the flu is usually more severe with high fever and body aches. Colds often have a gradual onset, while the flu comes on suddenly. If you're unsure, consult a healthcare provider for proper diagnosis."
+
+  utter_co_weather_impact:
+    - text: "Cold weather itself doesn't cause cold or flu, but it may promote conditions that allow viruses to spread more easily. Take preventive measures regardless of the weather."
+
+  utter_co_masks:
+    - text: "Wearing masks can help reduce the spread of cold and flu viruses, especially in crowded or high-risk settings. It's a good practice during flu season or outbreaks."
+
+  utter_co_medication_interaction:
+    - text: "Certain cold and flu medications may interact with other drugs you are taking. Always consult your healthcare provider or pharmacist before combining medications."
+
+  utter_pregnancy_flu:
+    - text: "If you are pregnant, it's essential to seek medical advice if you suspect you have the flu. Some flu medications may not be safe during pregnancy."
+
+  utter_flu_shot_effectiveness:
+    - text: "The flu shot is generally effective in preventing the flu. However, its effectiveness can vary depending on the flu strains circulating each season. It's still essential to get vaccinated as it provides protection."
+
+  utter_flu_shot_recommendation:
+    - text: "The flu shot is recommended for most people, including children, elderly, pregnant individuals, and those with certain health conditions. Consult your healthcare provider to see if it's suitable for you."
+
+  utter_co_self_care:
+    - text: "For self-care during cold and flu, rest, stay hydrated, use over-the-counter medications as needed, and follow your healthcare provider's advice. If symptoms worsen, seek medical attention."
+
+  utter_co_travel_precautions:
+    - text: "When traveling during cold and flu season, wash hands frequently, avoid touching your face, and practice respiratory hygiene. Carry hand sanitizer and follow any local health guidelines."
+
+  utter_spread_through_air:
+    - text: "Yes, cold and flu viruses can spread through the air when an infected person coughs or sneezes. It's important to practice good respiratory hygiene to reduce the risk of transmission."
+
+  utter_compromised_immune_system:
+    - text: "If you have a compromised immune system, it's crucial to take extra precautions to avoid exposure to cold and flu viruses. Consult your healthcare provider for personalized advice."
+
+  utter_common_cold_or_allergies:
+    - text: "Distinguishing between a common cold and allergies can be challenging since both share some similar symptoms. A cold often involves mucus production and fever, while allergies may cause itching and persistent sneezing."
+
+  utter_flu_shot_side_effects:
+    - text: "Common side effects of the flu shot include soreness at the injection site, mild fever, and fatigue. Serious side effects are rare, but if you experience severe symptoms, seek medical attention."
+
+  utter_respiratory_disease_symptoms:
+    - text: "Common symptoms of respiratory diseases include coughing, wheezing, shortness of breath, chest congestion, fatigue, fever, and in severe cases, bluish lips or face. It's important to consult a healthcare professional for an accurate diagnosis. If you experience any of these symptoms, seeking medical attention is advisable."
+
+  utter_respiratory_disease_causes:
+    - text: "Respiratory diseases can have various causes, including viral or bacterial infections, exposure to environmental pollutants (such as cigarette smoke, air pollution, and allergens), occupational hazards, underlying health conditions, and lifestyle factors like smoking or a weak immune system. The specific cause depends on the type of respiratory disease. Avoiding exposure to respiratory irritants and adopting a healthy lifestyle can help reduce the risk of developing respiratory issues."
+
+  utter_respiratory_disease_prevention:
+    - text: "To prevent respiratory diseases, you can follow some general measures such as practicing good hygiene, washing hands frequently, avoiding close contact with sick individuals, getting vaccinated (where applicable), maintaining a clean indoor environment, wearing masks in crowded or polluted areas, and avoiding exposure to pollutants and allergens. Quitting smoking and managing allergies are also crucial for respiratory health."
+
+  utter_respiratory_disease_treatment:
+    - text: "Treatment for respiratory diseases depends on the specific condition and severity. It can involve medications, such as bronchodilators, antibiotics, antivirals, or corticosteroids, breathing exercises, oxygen therapy, pulmonary rehabilitation, lifestyle modifications (quitting smoking, adopting a healthy diet), and in some cases, surgery (e.g., lung transplant). It's crucial to consult a healthcare professional for personalized advice. Remember to adhere to the prescribed treatment plan and attend regular follow-up appointments."
+
+  utter_respiratory_disease_diagnosis:
+    - text: "Diagnosing respiratory diseases typically involves a combination of medical history evaluation, physical examination, imaging tests (e.g., X-rays, CT scans), pulmonary function tests (spirometry), blood tests (arterial blood gas), sputum analysis, and sometimes, a lung biopsy. Only a qualified healthcare provider can accurately diagnose a respiratory disease."
+
+  utter_respiratory_disease_management:
+    - text: "Managing respiratory diseases often involves a comprehensive approach. It may include following prescribed treatments, taking medications as directed, avoiding triggers (such as smoke or allergens), using inhalers correctly, practicing respiratory exercises, attending regular check-ups with healthcare professionals, and maintaining a healthy lifestyle with regular exercise and a balanced diet. Support groups and educational resources can also provide valuable assistance in managing respiratory conditions."
+
+  utter_medication_management:
+    - text: "When taking respiratory medications, it's essential to follow your doctor's instructions carefully. Be aware of potential side effects, and don't hesitate to seek medical advice if you have concerns. Combining medications should only be done under medical supervision. If you miss a dose, follow the guidelines provided by your healthcare professional. Over-the-counter cough medicine may not always be suitable for all respiratory conditions, so it's best to consult your doctor first."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

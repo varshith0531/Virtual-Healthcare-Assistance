@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href=""><b>Home</b></a></li>
+                <li><a href="doctor.html"><b>Doctors</b></a></li>
+                <li><a href="appo.html"><b>Appointments</b></a></li>
+                <li><a href="../index1.html"><b>Assistant</b></a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="hero">
+            <!-- Add a hero section with a call-to-action -->
+            <h2>Find the Right Doctor for You</h2>
+            <p>Book appointments with the best healthcare professionals.</p>
+        </section>
+
+        <section id="search">
+            <!-- Add a search bar for finding doctors -->
+            <h3>Find a Doctor</h3>
+
+            <form id="searchForm">
+                <label for="city">City:</label>
+                <select name="city" id="city">
+                    <option value=""></option>
+                    <option value="chennai">Chennai</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="banglore">Bangalore</option>
+                    <option value="delhi">Delhi</option>
+                </select>
+                <label for="speciality">Speciality:</label>
+                <select name="speciality" id="speciality">
+                    <option value=""></option>
+                    <option value="diabetologist">Diabetologist</option>
+                    <option value="pulmonologist">Pulmonologist </option>
+                    <option value="otolaryngologist">Otolaryngologist</option>
+                    <option value="infectious disease specialists">Infectious Disease Specialists</option>
+                </select>
+                <input type="submit" id="searchBar" name="search" value="Search" class="cta-button">            
+            </form>
+        </section>
+
+        <section id="featured-doctors">
+            <!-- Display a list of featured doctors -->
+            <h3>Featured Doctors</h3>
+            <div class="doctor-card">
+                <img src="doc1.jpg" alt="Doctor 1">
+                <h2>Dr Rashmi N P</h2>
+                <p>Specialty: Diabetology</p>
+                <p>Education: MBBS, Diabetology</p>
+                <p>Experience: 15+ years</p>
+                <p>Location: Chennai, India</p>
+                <p>Hospital: The Sagar Centre for Diabetes,Tilaknagar</p>
+                <p>Languages: English, தமிழ், తెలుగు</p>
+                <a href="appo.html?doctor=%20Dr Rashmi N P&specialty=Diabetology" class="cta-button">BOOK APPOINTMENT</a>
+                <!-- Add more information about the doctor as needed -->
+            </div>
+            <div class="doctor-card">
+                <img src="doc25.jpg" alt="Doctor 1">
+                <h2>Dr. Pradeep Simha K</h2>
+                <p>Specialty: Pulmonologist</p>
+                <p>Education: MBBS, Respiratory Medicine, MRCP Pulmonologist</p>
+                <p>Experience: 18+ years</p>
+                <p>Location: Hyderabad, India</p>
+                <p>Hospital: Continental Hospitals,Gachibowli</p>
+                <p>Languages: English, తెలుగు</p>
+                <a href="appo.html?doctor=%20Dr. Pradeep Simha K&specialty=Pulmonologist" class="cta-button">BOOK APPOINTMENT</a>
+                <!-- Add more information about the doctor as needed -->
+            </div>
+            <!-- Add more doctor cards as needed -->
+        </section>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2023 Doctor Appointment Website. All rights reserved.</p>
+    </footer> -->
+
+    <!-- Add your JavaScript files here -->
+    <script>
+        // This function will be called when the form is submitted
+document.getElementById('searchForm').onsubmit = function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get the selected city and speciality from the dropdowns
+    const selectedCity = document.getElementById('city').value;
+    const selectedSpeciality = document.getElementById('speciality').value;
+
+    // Redirect to the corresponding page based on the selected options
+    redirectToPage(selectedCity, selectedSpeciality);
+};
+
+// Function to redirect to the corresponding page
+function redirectToPage(city, speciality) {
+    // Check the selected city and speciality and redirect accordingly
+    if (city === "hyderabad" && speciality === "diabetologist") {
+        window.location.href = "hyd.html"; // Redirect to hyd.html
+    } else if (city === "hyderabad" && speciality === "pulmonologist") {
+        window.location.href = "pulhyd.html"; // Redirect to another page
+    } else if (city === "hyderabad" && speciality === "otolaryngologist") {
+        window.location.href = "otohyd.html"; // Redirect to another page
+    } else if (city === "hyderabad" && speciality === "infectious disease specialists") {
+        window.location.href = "genhyd.html"; // Redirect to another page
+    } else if (city === "chennai" && speciality === "diabetologist") {
+        window.location.href = "doctor.html"; // Redirect to another page
+    } else if (city === "chennai" && speciality === "pulmonologist") {
+        window.location.href = "pulche.html"; // Redirect to another page
+    } else if (city === "chennai" && speciality === "otolaryngologist") {
+        window.location.href = "otoche.html"; // Redirect to another page
+    } else if (city === "chennai" && speciality === "infectious disease specialists") {
+        window.location.href = "genche.html"; // Redirect to another page
+    } else if (city === "banglore" && speciality === "diabetologist") {
+        window.location.href = "ban.html"; // Redirect to another page
+    } else if (city === "banglore" && speciality === "pulmonologist") {
+        window.location.href = "pulban.html"; // Redirect to another page
+    } else if (city === "banglore" && speciality === "otolaryngologist") {
+        window.location.href = "otoban.html"; // Redirect to another page
+    } else if (city === "banglore" && speciality === "infectious disease specialists") {
+        window.location.href = "genban.html"; // Redirect to another page
+    } else if (city === "delhi" && speciality === "diabetologist") {
+        window.location.href = "del.html"; // Redirect to another page
+    } else if (city === "delhi" && speciality === "pulmonologist") {
+        window.location.href = "puldel.html"; // Redirect to another page
+    } else if (city === "delhi" && speciality === "otolaryngologist") {
+        window.location.href = "otodel.html"; // Redirect to another page
+    } else if (city === "delhi" && speciality === "infectious disease specialists") {
+        window.location.href = "gendel.html"; // Redirect to another page
+    } else {
+        // Redirect to a default page or show an error message
+        window.location.href = "default.html";
+    }
+}
+
+    </script>
+
+    <style>
+        select {
+            width: 150px;
+            height: 33px;
+            margin: 10px;
+        }
+        select:focus {
+            min-width: 150px;
+            width: auto;
+        }
+    </style>
+</body>
+</html>

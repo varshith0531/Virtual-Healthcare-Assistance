@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Health Records</title>
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+    .container {
+      max-width: 1800px;
+      margin: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+      border-radius: 5px;
+      border: 2px solid #ccc;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .upload-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .custom-file-upload {
+      display: inline-block;
+      cursor: pointer;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .custom-file-upload:hover {
+      background-color: #0056b3;
+    }
+
+    .custom-file-upload input[type="file"] {
+      display: none;
+    }
+
+    .upload-button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .upload-button:hover {
+      background-color: #218838;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index1.html"><b>Assistant</b></a></li>
+            <li><a href=""><b>Contact Us</b></a></li>
+            <li><a href="index.html"><b>Account</b></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Upload Health Records</h1>
+    <form action="uploads.php" method="post" enctype="multipart/form-data">
+      <div class="upload-section">
+        
+        <label for="fileInput" class="custom-file-upload">
+          <span>Choose file</span>
+          <input type="file" name="fileInput" id="fileInput">
+        </label>
+        <input type="submit" value="Upload PDF" name="submit" class="upload-button">
+        <ul id="fileList"></ul>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById("fileInput").addEventListener("change", function (event) {
+      const fileList = document.getElementById("fileList");
+      fileList.innerHTML = "";
+
+      const files = event.target.files;
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const listItem = document.createElement("li");
+        listItem.textContent = file.name;
+        fileList.appendChild(listItem);
+      }
+    });
+  </script>
+</body>
+</html>

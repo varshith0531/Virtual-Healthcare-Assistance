@@ -1,0 +1,219 @@
+/* Reset default styles for better consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+.active, .nav ul li:hover{
+    background: #0056b3;
+    border-radius: 2px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* Header styling */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+/* Hero section */
+#hero {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f0f0f0;
+}
+
+#hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Search section */
+#search {
+    text-align: center;
+}
+
+#search form {
+    display: inline-block;
+}
+
+#search form input[type="text"],
+#search form input[type="date"],
+#search form input[type="time"],
+#search form input[type="email"],
+#search form input[type="tel"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#search form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Doctor profile section */
+#doctor-profile {
+    text-align: center;
+}
+
+.doctor-card {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.doctor-card img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.doctor-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.appointment-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.appointment-button:hover {
+    background-color: #0056b3;
+}
+
+/* Reviews section */
+#reviews {
+    text-align: center;
+}
+
+.review-card {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.review-card h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 16px;
+    font-weight: bold;
+    color: #007bff;
+}
+

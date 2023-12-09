@@ -1,0 +1,576 @@
+version: "3.1"
+
+stories:
+  - story: main path
+    steps:
+      - intent: say_disease
+      - action: utter_say_disease
+      - intent: pred
+      - action: utter_pred
+      - intent: phar
+      - action: utter_phar
+      - intent: thank_y
+      - action: utter_thank_y
+      - intent: cont
+      - action: utter_cont
+      - intent: byee
+      - action: utter_byee
+  - story: happy path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: user asks about diabetes
+    steps:
+      - intent: diabetes_info
+      - action: utter_diabetes_info
+
+  - story: dia_diagnosis
+    steps:
+      - intent: dia_app
+      - action: utter_dia_app
+      - intent: dia_medi
+      - action: utter_dia_medi
+      - intent: dia_pla
+      - action: utter_dia_pla
+
+  - story: user asks about symptoms
+    steps:
+      - intent: symptoms_info
+      - action: utter_symptoms_info
+
+  - story: user asks about diagnosis
+    steps:
+      - intent: diagnosis_info
+      - action: utter_diagnosis_info
+
+  - story: user asks about prevention
+    steps:
+      - intent: prevention_info
+      - action: utter_prevention_info
+
+  - story: user asks about complications
+    steps:
+      - intent: complications_info
+      - action: utter_complications_info
+
+  - story: user asks about diet
+    steps:
+      - intent: diet_info
+      - action: utter_diet_info
+
+  - story: user asks about exercise
+    steps:
+      - intent: exercise_info
+      - action: utter_exercise_info
+
+  - story: user asks about medications
+    steps:
+      - intent: medications_info
+      - action: utter_medications_info
+
+  - story: user asks about blood sugar
+    steps:
+      - intent: blood_sugar_info
+      - action: utter_blood_sugar_info
+
+  - story: user asks about lifestyle changes
+    steps:
+      - intent: lifestyle_info
+      - action: utter_lifestyle_info
+
+  - story: user asks about type 1 diabetes
+    steps:
+      - intent: type1_diabetes_info
+      - action: utter_type1_diabetes_info
+
+  - story: user asks about type 2 diabetes
+    steps:
+      - intent: type2_diabetes_info
+      - action: utter_type2_diabetes_info
+
+  - story: user asks about gestational diabetes
+    steps:
+      - intent: gestational_diabetes_info
+      - action: utter_gestational_diabetes_info
+
+  - story: user asks about insulin
+    steps:
+      - intent: insulin_info
+      - action: utter_insulin_info
+
+  - story: user asks about complications management
+    steps:
+      - intent: complications_management_info
+      - action: utter_complications_management_info
+
+  - story: user asks about foot care
+    steps:
+      - intent: foot_care_info
+      - action: utter_foot_care_info
+
+  - story: user asks about causes of high blood sugar
+    steps:
+      - intent: high_blood_sugar_causes
+      - action: utter_high_blood_sugar_causes
+
+  - story: user asks about causes of low blood sugar
+    steps:
+      - intent: low_blood_sugar_causes
+      - action: utter_low_blood_sugar_causes
+
+  - story: user asks about managing stress
+    steps:
+      - intent: managing_stress
+      - action: utter_managing_stress
+
+  - story: user asks about handling sick days
+    steps:
+      - intent: handling_sick_days
+      - action: utter_handling_sick_days
+
+  - story: user asks for diabetes management tips
+    steps:
+      - intent: diabetes_management_tips
+      - action: utter_diabetes_management_tips
+
+  - story: user asks about insulin pumps
+    steps:
+      - intent: insulin_pump_info
+      - action: utter_insulin_pump_info
+
+  - story: user asks about diabetes support groups
+    steps:
+      - intent: diabetes_support_groups
+      - action: utter_diabetes_support_groups
+
+  - story: user asks about traveling with diabetes
+    steps:
+      - intent: traveling_with_diabetes
+      - action: utter_traveling_with_diabetes
+
+  - story: user asks about managing blood sugar during exercise
+    steps:
+      - intent: managing_blood_sugar_during_exercise
+      - action: utter_managing_blood_sugar_during_exercise
+
+  - story: user asks about diabetic eye care
+    steps:
+      - intent: diabetic_eye_care_info
+      - action: utter_diabetic_eye_care_info
+
+  - story: user asks about dental care for diabetes
+    steps:
+      - intent: dental_care_info
+      - action: utter_dental_care_info
+
+  - story: user asks about alcohol and diabetes
+    steps:
+      - intent: alcohol_and_diabetes
+      - action: utter_alcohol_and_diabetes
+
+  - story: user asks about smoking and diabetes
+    steps:
+      - intent: smoking_and_diabetes
+      - action: utter_smoking_and_diabetes
+
+  - story: user asks about pregnancy and diabetes
+    steps:
+      - intent: pregnancy_and_diabetes
+      - action: utter_pregnancy_and_diabetes
+
+  - story: user asks about dealing with emotions
+    steps:
+      - intent: dealing_with_emotions
+      - action: utter_dealing_with_emotions
+
+  # pneumonia
+
+  - story: User asks about pneumonia symptoms
+    steps:
+      - intent: pneumonia_info
+      - action: utter_pneumonia_info
+      - intent: ask_symptoms
+      - action: utter_pneumonia_symptoms
+      - intent: pne_app
+      - action: utter_pne_app
+      - intent: pne_medi
+      - action: utter_pne_medi
+      - intent: pne_pla
+      - action: utter_pne_pla
+
+  - story: User asks about pneumonia diagnosis
+    steps:
+      - intent: ask_diagnosis
+      - action: utter_pneumonia_diagnosis
+
+  - story: User asks about pneumonia treatment
+    steps:
+      - intent: ask_treatment
+      - action: utter_pneumonia_treatment
+
+  - story: User asks about pneumonia prevention
+    steps:
+      - intent: ask_prevention
+      - action: utter_pneumonia_prevention
+
+  - story: user asks about symptoms
+    steps:
+      - intent: mal_symptoms
+      - action: utter_provide_malaria_symptoms
+
+  - story: user asks about treatment
+    steps:
+      - intent: mal_treatment
+      - action: utter_provide_malaria_treatment
+
+  - story: user asks about prevention
+    steps:
+      - intent: mal_prevention
+      - action: utter_provide_malaria_prevention_tips
+
+  - story: user asks about diagnosis
+    steps:
+      - intent: mal_diagnosis
+      - action: utter_explain_malaria_diagnosis_process
+
+  - story: user asks about risk factors
+    steps:
+      - intent: risk_factors
+      - action: utter_describe_malaria_risk_factors
+
+  - story: user asks how malaria spreads
+    steps:
+      - intent: malaria_spread
+      - action: utter_explain_malaria_spread
+
+  - story: user asks about different types of malaria
+    steps:
+      - intent: malaria_types
+      - action: utter_explain_malaria_types
+
+  - story: user asks about medication side effects
+    steps:
+      - intent: medication_side_effects
+      - action: utter_describe_medication_side_effects
+
+  - story: user asks about home remedies
+    steps:
+      - intent: home_remedies
+      - action: utter_provide_home_remedies_for_malaria
+
+  - story: user asks for travel advice
+    steps:
+      - intent: travel_advice
+      - action: utter_provide_malaria_travel_advice
+
+  - story: user asks about malaria prevalence
+    steps:
+      - intent: malaria_prevalence
+      - action: utter_explain_malaria_prevalence
+
+  - story: user asks about malaria vaccine
+    steps:
+      - intent: vaccine_information
+      - action: utter_provide_malaria_vaccine_info
+
+  - story: user compares malaria and COVID-19
+    steps:
+      - intent: malaria_vs_covid
+      - action: utter_compare_malaria_and_covid_symptoms
+
+  - story: user asks about malaria research advancements
+    steps:
+      - intent: malaria_research
+      - action: utter_provide_malaria_research_info
+
+  - story: user inquires about insecticide-treated nets
+    steps:
+      - intent: insecticide_treated_nets
+      - action: utter_explain_insecticide_treated_nets
+
+  - story: user asks about malaria in children
+    steps:
+      - intent: malaria_in_children
+      - action: utter_describe_malaria_in_children
+
+  - story: user asks about seasonal malaria transmission
+    steps:
+      - intent: malaria_transmission_seasonal
+      - action: utter_explain_seasonal_malaria_transmission
+
+  - story: user asks about malaria diagnosis methods
+    steps:
+      - intent: malaria_diagnosis_methods
+      - action: utter_explain_malaria_diagnosis_methods
+
+  - story: user seeks information on severe malaria symptoms
+    steps:
+      - intent: severe_malaria_symptoms
+      - action: utter_describe_severe_malaria_symptoms
+
+  - story: user asks about herbal malaria treatments
+    steps:
+      - intent: herbal_malaria_treatments
+      - action: utter_discuss_herbal_malaria_treatments
+
+  - story: user asks about malaria prevention do's and don'ts
+    steps:
+      - intent: malaria_prevention_dos_donts
+      - action: utter_provide_malaria_prevention_dos_donts
+
+  - story: user inquires about malaria vaccine availability
+    steps:
+      - intent: malaria_vaccine_availability
+      - action: utter_explain_malaria_vaccine_availability
+
+  - story: user asks about mosquito species and malaria transmission
+    steps:
+      - intent: mosquito_species
+      - action: utter_describe_mosquito_species_transmission
+
+  - story: user asks about recurring malaria infections
+    steps:
+      - intent: malaria_recurring_infection
+      - action: utter_explain_malaria_recurring_infection
+
+  - story: user asks about atovaquone-proguanil medication
+    steps:
+      - intent: atovaquone_proguanil
+      - action: utter_explain_atovaquone_proguanil
+
+  - story: user asks about indoor malaria transmission
+    steps:
+      - intent: malaria_spread_indoor
+      - action: utter_discuss_malaria_spread_indoors
+
+  - story: user inquires about malaria and HIV co-infection
+    steps:
+      - intent: malaria_and_hiv
+      - action: utter_explain_malaria_and_hiv
+
+  - story: user asks about travel vaccinations
+    steps:
+      - intent: travel_vaccinations
+      - action: utter_provide_travel_vaccination_info
+
+  - story: user inquires about malaria precautions during pregnancy
+    steps:
+      - intent: malaria_and_pregnancy_precautions
+      - action: utter_explain_malaria_precautions_pregnancy
+
+  - story: user asks about global malaria cases
+    steps:
+      - intent: malaria_cases_global
+      - action: utter_provide_global_malaria_cases
+
+  - story: user asks about drug-resistant malaria regions
+    steps:
+      - intent: resistant_malaria_regions
+      - action: utter_explain_drug_resistant_malaria_regions
+
+  - story: user asks about artemisinin-based combination therapy
+    steps:
+      - intent: malaria_combination_therapy
+      - action: utter_explain_malaria_combination_therapy
+
+  - story: user inquires about the cost of malaria testing
+    steps:
+      - intent: malaria_testing_cost
+      - action: utter_describe_malaria_testing_cost
+
+  - story: user asks about ongoing malaria eradication campaigns
+    steps:
+      - intent: malaria_campaigns
+      - action: utter_provide_malaria_campaign_info
+
+  - story: user asks about malaria and climate change
+    steps:
+      - intent: malaria_and_climate_change
+      - action: utter_explain_malaria_and_climate_change
+
+  - story: user asks about malaria prevention and insecticides
+    steps:
+      - intent: malaria_prevention_insecticides
+      - action: utter_explain_malaria_prevention_insecticides
+
+  - story: user inquires about antimalarial drugs during pregnancy
+    steps:
+      - intent: malaria_pregnancy_drugs
+      - action: utter_describe_malaria_drugs_during_pregnancy
+
+  - story: user asks about the duration of malaria symptoms
+    steps:
+      - intent: malaria_symptoms_duration
+      - action: utter_explain_malaria_symptoms_duration
+
+  - story: user asks about malaria transmission through blood transfusions
+    steps:
+      - intent: malaria_transfusion_transmission
+      - action: utter_discuss_malaria_transfusion_transmission
+
+  - story: user asks about the link between malaria and anemia
+    steps:
+      - intent: malaria_and_anemia
+      - action: utter_explain_malaria_and_anemia
+
+  - story: user inquires about treatments for severe malaria
+    steps:
+      - intent: severe_malaria_treatment
+      - action: utter_describe_severe_malaria_treatment
+
+  - story: user asks about malaria sporozoites and the parasite life cycle
+    steps:
+      - intent: malaria_sporozoites
+      - action: utter_explain_malaria_sporozoites_life_cycle
+
+  - story: user asks about the accuracy of malaria diagnostic tests
+    steps:
+      - intent: malaria_diagnostic_accuracy
+      - action: utter_discuss_malaria_diagnostic_accuracy
+  - story: User asks about symptoms
+    steps:
+      - intent: co_symptoms
+      - action: utter_co_symptoms
+
+  - story: User asks about prevention
+    steps:
+      - intent: co_prevention
+      - action: utter_co_prevention
+
+  - story: User asks about treatment
+    steps:
+      - intent: co_treatment
+      - action: utter_co_treatment
+
+  - story: User asks if a cold is contagious
+    steps:
+      - intent: co_contagious
+      - action: utter_co_contagious
+
+  - story: User asks about duration
+    steps:
+      - intent: co_duration
+      - action: utter_co_duration
+
+  - story: User asks about complications
+    steps:
+      - intent: co_complications
+      - action: utter_co_complications
+
+  - story: User asks about home remedies
+    steps:
+      - intent: co_home_remedies
+      - action: utter_co_home_remedies
+
+  - story: User asks about vaccination
+    steps:
+      - intent: co_vaccination
+      - action: utter_co_vaccination
+
+  - story: User asks about immunity
+    steps:
+      - intent: co_immunity
+      - action: utter_co_immunity
+
+  - story: User asks about differences
+    steps:
+      - intent: co_differences
+      - action: utter_co_differences
+
+  - story: User asks about weather impact
+    steps:
+      - intent: co_weather_impact
+      - action: utter_co_weather_impact
+
+  - story: User asks about masks
+    steps:
+      - intent: co_masks
+      - action: utter_co_masks
+
+  - story: User asks about medication interaction
+    steps:
+      - intent: co_medication_interaction
+      - action: utter_co_medication_interaction
+
+  - story: User asks about flu during pregnancy
+    steps:
+      - intent: ask_pregnancy_flu
+      - action: utter_pregnancy_flu
+
+  - story: User asks about flu shot effectiveness
+    steps:
+      - intent: ask_flu_shot_effectiveness
+      - action: utter_flu_shot_effectiveness
+
+  - story: User asks about flu shot recommendation
+    steps:
+      - intent: ask_flu_shot_recommendation
+      - action: utter_flu_shot_recommendation
+
+  - story: User asks about self-care
+    steps:
+      - intent: co_self_care
+      - action: utter_co_self_care
+
+  - story: User asks about travel precautions
+    steps:
+      - intent: co_travel_precautions
+      - action: utter_co_travel_precautions
+
+  - story: User asks how cold and flu spread
+    steps:
+      - intent: ask_spread_through_air
+      - action: utter_spread_through_air
+
+  - story: User asks about compromised immune system
+    steps:
+      - intent: ask_compromised_immune_system
+      - action: utter_compromised_immune_system
+
+  - story: User asks about common cold or allergies
+    steps:
+      - intent: ask_common_cold_or_allergies
+      - action: utter_common_cold_or_allergies
+
+  - story: User asks about flu shot side effects
+    steps:
+      - intent: ask_flu_shot_side_effects
+      - action: utter_flu_shot_side_effects
+
+  - story: User greets and asks about respiratory disease symptoms
+    steps:
+      - intent: respiratory_disease_symptoms
+      - action: utter_respiratory_disease_symptoms
+
+  - story: User asks about causes of respiratory diseases
+    steps:
+      - intent: respiratory_disease_causes
+      - action: utter_respiratory_disease_causes
+
+  - story: User asks about prevention of respiratory diseases
+    steps:
+      - intent: respiratory_disease_prevention
+      - action: utter_respiratory_disease_prevention
+
+  - story: User asks about treatment options for respiratory diseases
+    steps:
+      - intent: respiratory_disease_treatment
+      - action: utter_respiratory_disease_treatment
+
+  - story: User asks about diagnosing respiratory diseases
+    steps:
+      - intent: respiratory_disease_diagnosis
+      - action: utter_respiratory_disease_diagnosis
+
+  - story: User asks about managing respiratory diseases
+    steps:
+      - intent: respiratory_disease_management
+      - action: utter_respiratory_disease_management
+
+  - story: User inquires about medication management
+    steps:
+      - intent: medication_management
+      - action: utter_medication_management

@@ -1,0 +1,139 @@
+/* Your CSS styles here */
+
+/* Global styles */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 50px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+/* Navigation styles */
+
+.navigation {
+    background-color: #555;
+    padding: 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.navigation li:last-child {
+    margin-right: 0;
+}
+
+.navigation a {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Content styles */
+
+#content {
+    padding: 20px;
+}
+
+h1 {
+    color: #555;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    max-width: 250px;
+}
+
+.box{
+    background: rgb(195, 191, 191);
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+}
+.top{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color:  rgb(102, 101, 101);
+}
+.text{
+    text-align: center;
+    color:#fcfcfc;
+    font-size: 10px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 110%;
+  }
+

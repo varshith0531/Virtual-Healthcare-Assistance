@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacy - Disease Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav> 
+        </div>
+        </div>
+    </div>
+    <div id="content">
+        <!-- <h1>Disease Name</h1> -->
+        <h2>Tablets for Diabetes</h2>
+        <table id="cart-table-disease">
+            <tr>
+                <td>Metformin</td>
+                <td>500mg</td>
+                <td>$10</td>
+                <td><img src="metformin 500mg.jpg" alt="Metformin"></td>
+                <td><button onclick="addToCart('Metformin', '500mg', 10, 'metformin 500mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Gliclazide</td>
+                <td>80mg</td>
+                <td>$15</td>
+                <td><img src="Gliclazide 80mg.jpg" alt="Gliclazide"></td>
+                <td><button onclick="addToCart('Gliclazide', '80mg', 15, 'Gliclazide 80mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Glimepiride</td>
+                <td>2mg</td>
+                <td>$12</td>
+                <td><img src="Glimepiride 2 mg.jpg" alt="Glimepiride"></td>
+                <td><button onclick="addToCart('Glimepiride', '2mg', 12, 'Glimepiride 2 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Insulin Lispro</td>
+                <td>100 IU/ml</td>
+                <td>$30</td>
+                <td><img src="Insulin Lispro 100 ml.jpg" alt="Insulin Lispro"></td>
+                <td><button onclick="addToCart('Insulin Lispro', '100 IU/ml', 30, 'Insulin Lispro 100 ml.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Insulin Glargine</td>
+                <td>300 IU/ml</td>
+                <td>$35</td>
+                <td><img src="Insulin Glargine 300 ml.jpg" alt="Insulin Glargine"></td>
+                <td><button onclick="addToCart('Insulin Glargine', '300 IU/ml', 35, 'Insulin Glargine 300 ml.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Pioglitazone</td>
+                <td>15mg</td>
+                <td>$18</td>
+                <td><img src="Pioglitazone 15mg.jpg" alt="Pioglitazone"></td>
+                <td><button onclick="addToCart('Pioglitazone', '15mg', 18, 'Pioglitazone 15mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Acarbose</td>
+                <td>50mg</td>
+                <td>$14</td>
+                <td><img src="Acarbose 50mg.jpg" alt="Acarbose"></td>
+                <td><button onclick="addToCart('Acarbose', '50mg', 14, 'Acarbose 50mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Vildagliptin</td>
+                <td>100mg</td>
+                <td>$20</td>
+                <td><img src="Vildagliptin 100mg.jpg" alt="Vildagliptin"></td>
+                <td><button onclick="addToCart('Vildagliptin', '100mg', 20, 'Vildagliptin 100mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Canagliflozin</td>
+                <td>25mg</td>
+                <td>$25</td>
+                <td><img src="cinagliflozin 25mg.jpg" alt="Canagliflozin"></td>
+                <td><button onclick="addToCart('Canagliflozin', '25mg', 25, 'cinagliflozin 25mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Sitagliptin</td>
+                <td>50mg</td>
+                <td>$22</td>
+                <td><img src="sitagliptin 50mg.jpg" alt="Sitagliptin"></td>
+                <td><button onclick="addToCart('Sitagliptin', '50mg', 22, 'sitagliptin 50mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <!-- Add more tablets here -->
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

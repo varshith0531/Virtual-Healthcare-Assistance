@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacy - Malaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav> 
+        </div>
+        </div>
+    </div>
+    <div id="content">
+        <h1>Malaria</h1>
+        <h2>Tablets for Malaria</h2>
+        <table id="cart-table-disease">
+            <tr>
+                <th>Tablet Name</th>
+                <th>Strength</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Chloroquine</td>
+                <td>250mg</td>
+                <td>$10</td>
+                <td><img src="Chloroquine 250mg.jpg" alt="Chloroquine"></td>
+                <td><button onclick="addToCart('Chloroquine', '250mg', 10, 'Chloroquine 250mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Hydroxychloroquine</td>
+                <td>200mg</td>
+                <td>$12</td>
+                <td><img src="Hydroxychloroquine 200mg.jpg" alt="Hydroxychloroquine"></td>
+                <td><button onclick="addToCart('Hydroxychloroquine', '200mg', 12, 'Hydroxychloroquine 200mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Mefloquine</td>
+                <td>250mg</td>
+                <td>$18</td>
+                <td><img src="mefloquine 250 mg.jpg" alt="Mefloquine"></td>
+                <td><button onclick="addToCart('Mefloquine', '250mg', 18, 'mefloquine 250 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Atovaquone</td>
+                <td>250mg</td>
+                <td>$20</td>
+                <td><img src="Atovaquone 250 mg.jpg" alt="Atovaquone"></td>
+                <td><button onclick="addToCart('Atovaquone', '250mg', 20, 'Atovaquone 250 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Proguanil</td>
+                <td>100mg</td>
+                <td>$15</td>
+                <td><img src="Proguanil 100 mg.jpg" alt="Proguanil"></td>
+                <td><button onclick="addToCart('Proguanil', '100mg', 15, 'Proguanil 100 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Artemether</td>
+                <td>20mg</td>
+                <td>$25</td>
+                <td><img src="Artemether 20 mg.jpg" alt="Artemether"></td>
+                <td><button onclick="addToCart('Artemether', '20mg', 25, 'Artemether 20 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Artesunate</td>
+                <td>50mg</td>
+                <td>$30</td>
+                <td><img src="Artesunate 50 mg.jpg" alt="Artesunate"></td>
+                <td><button onclick="addToCart('Artesunate', '50mg', 30, 'Artesunate 50 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Quinine</td>
+                <td>300mg</td>
+                <td>$22</td>
+                <td><img src="quinine 300 mg.jpg" alt="Quinine"></td>
+                <td><button onclick="addToCart('Quinine', '300mg', 22, 'quinine 300 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Doxycycline</td>
+                <td>100mg</td>
+                <td>$18</td>
+                <td><img src="doxycycline 100 mg.jpg" alt="Doxycycline"></td>
+                <td><button onclick="addToCart('Doxycycline', '100mg', 18, 'doxycycline 100 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Primaquine</td>
+                <td>15mg</td>
+                <td>$16</td>
+                <td><img src="primaquine 15 mg.jpg" alt="Primaquine"></td>
+                <td><button onclick="addToCart('Primaquine', '15mg', 16, 'primaquine 15 mg.jpg')">Add to Cart</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

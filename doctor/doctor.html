@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Home</b></a></li>
+                <li><a href="doctor.html"><b>Doctors</b></a>
+                    <ul class="dropdown">
+                            <li><a href="hyd.html">Diabetology</a></li>
+                            <li><a href="pulban.html">Pulmonologist</a></li>
+                            <li><a href="otoche.html">Otolaryngologist</a></li>
+                            <li><a href="gendel.html">Infectious Disease Specialists</a></li>
+                        </ul>
+                </li>
+                <li><a href="appo.html"><b>Appointments</b></a></li>
+                <li><a href=""><b>Assistant</b></a></li>
+            </ul>
+        </nav>
+        </div>
+        </div>
+    </div>
+
+    <main>
+        <section id="doctor-profile">
+            <!-- Display the doctor's profile information -->
+            <div class="doctor-card">
+                <img src="doc3.png" alt="Doctor 1">
+                <h2>Dr Sriram D K</h2>
+                <p>Specialty: Diabetology</p>
+                <p>Education: M.Sc., Diabetes (UK)</p>
+                <p>Experience: 25+ years</p>
+                <p>Location: Chennai, India</p>
+                <p>Hospital: Apollo Hospitals,Greams Road Chennai</p>
+                <p>Languages: English, தமிழ், తెలుగు</p>
+                <a href="appo.html?doctor=%20Dr Sriram D K&specialty=Diabetologist" class="cta-button">BOOK APPOINTMENT</a>
+                <!-- Add more information about the doctor as needed -->
+            </div>
+            <div class="doctor-card">
+                <img src="doc1.jpg" alt="Doctor 1">
+                <h2>Dr Rashmi N P</h2>
+                <p>Specialty: Diabetology</p>
+                <p>Education: MBBS, Diabetology</p>
+                <p>Experience: 15+ years</p>
+                <p>Location: Chennai, India</p>
+                <p>Hospital: The Sagar Centre for Diabetes,Tilaknagar</p>
+                <p>Languages: English, தமிழ், తెలుగు</p>
+                <a href="appo.html?doctor=%20Dr Rashmi N P&specialty=Diabetologist" class="cta-button">BOOK APPOINTMENT</a>
+                <!-- Add more information about the doctor as needed -->
+            </div>
+            <div class="doctor-card">
+                <img src="doc5.png" alt="Doctor 1">
+                <h2>Dr Shantharam D</h2>
+                <p>Specialty: Diabetology</p>
+                <p>Education: MBBS,. MD., D. Diab</p>
+                <p>Experience: 32+ years</p>
+                <p>Location: Chennai, India</p>
+                <p>Hospital: Apollo Hospitals,Greams Road Chennai</p>
+                <p>Languages: English, தமிழ்</p>
+                <a href="appo.html?doctor=%20Dr Shantharam D&specialty=Diabetologist" class="cta-button">BOOK APPOINTMENT</a>
+                <!-- Add more information about the doctor as needed -->
+            </div>
+            <div class="doctor-card">
+                <img src="doc4.png" alt="Doctor 1">
+                <h2>Dr Sudharsan N</h2>
+                <p>Specialty: Diabetology</p>
+                <p>Education: MBBS DNB,PGDHS</p>
+                <p>Experience: 15+ years</p>
+                <p>Location: Chennai, India</p>
+                <p>Hospital: gleneagles global healthcity chennai</p>
+                <p>Languages: English, தமிழ்</p>
+                <a href="appo.html?doctor=%20Dr Sudharsan N&specialty=Diabetologist" class="cta-button">BOOK APPOINTMENT</a>
+                <!-- Add more information about the doctor as needed -->
+            </div>
+        </section>
+    </main>
+
+    <style>
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    padding: 20px 20px;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown{
+    width: 100%;
+    /* background: #fff; */
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+    </style>
+
+    
+
+    <!-- Add your JavaScript files here -->
+    <script>
+    </script>
+</body>
+</html>

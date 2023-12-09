@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacy - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav> 
+        </div>
+        </div>
+    </div>
+    <div id="content">
+        <h1>Your Cart</h1>
+        <table id="cart-table-cart">
+            <tr>
+                <th>Tablet Name</th>
+                <th>Strength</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
+            <!-- Cart items will be dynamically added here -->
+        </table>
+    </div>
+    <div id="customer-info">
+        <h2>Customer Information</h2>
+        <form method="post" action="checkou.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <p>Total Price: <span id="total-price">$0</span></p>
+            <button type="submit" name="checkout" onclick="checkout()">Checkout</button>
+        </form>
+
+    </div>
+</div>
+<style>
+    /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+/* Navigation Bar */
+.navigation {
+  background-color: #333;
+  padding: 10px;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navigation li a:hover {
+  background-color: #555;
+}
+
+/* Content */
+#content {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+#customer-info {
+  margin-top: 20px;
+}
+
+#customer-info label, #customer-info input, #customer-info p {
+  margin-bottom: 10px;
+}
+
+#total-price {
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+/* ... (previous code) ... */
+
+/* Content */
+
+
+/* Form Styles */
+form {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"] {
+  width: 70%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="tel"]:focus {
+  outline: none;
+  border-color: #555;
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+form p {
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* ... (previous code) ... */
+
+
+</style>
+    <script src="script.js"></script>
+    <script>
+        // Call the renderCart function when the cart page is loaded
+        
+    </script>
+</body>
+</html>

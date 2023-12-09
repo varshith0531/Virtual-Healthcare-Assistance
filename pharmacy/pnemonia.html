@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pharmacy - Pneumonia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+        <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="ab.png" width="80px"></a>
+        </div>
+       <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav> 
+        </div>
+        </div>
+    </div>
+    <div id="content">
+        <h1>Pneumonia</h1>
+        <h2>Tablets for Pneumonia</h2>
+        <table id="cart-table-disease">
+            <tr>
+                <th>Tablet Name</th>
+                <th>Strength</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Amoxicillin</td>
+                <td>500mg</td>
+                <td>$15</td>
+                <td><img src="amoxicillin 500 mg.jpg" alt="Amoxicillin"></td>
+                <td><button onclick="addToCart('Amoxicillin', '500mg', 15, 'amoxicillin 500 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Azithromycin</td>
+                <td>250mg</td>
+                <td>$20</td>
+                <td><img src="azithromycin 250mg.jpg" alt="Azithromycin"></td>
+                <td><button onclick="addToCart('Azithromycin', '250mg', 20, 'azithromycin 250mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Ceftriaxone</td>
+                <td>1g</td>
+                <td>$25</td>
+                <td><img src="ceftriaxone 1g.jpg" alt="Ceftriaxone"></td>
+                <td><button onclick="addToCart('Ceftriaxone', '1g', 25, 'ceftriaxone 1g.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Clarithromycin</td>
+                <td>500mg</td>
+                <td>$18</td>
+                <td><img src="clarithromycin 500mg.jpg" alt="Clarithromycin"></td>
+                <td><button onclick="addToCart('Clarithromycin', '500mg', 18, 'clarithromycin 500mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Levofloxacin</td>
+                <td>750mg</td>
+                <td>$22</td>
+                <td><img src="levofloxacine 750mg.jpg" alt="Levofloxacin"></td>
+                <td><button onclick="addToCart('Levofloxacin', '750mg', 22, 'levofloxacine 750mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Moxifloxacin</td>
+                <td>400mg</td>
+                <td>$30</td>
+                <td><img src="moxifloxacin 400mg.jpg" alt="Moxifloxacin"></td>
+                <td><button onclick="addToCart('Moxifloxacin', '400mg', 30, 'moxifloxacin 400mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Penicillin VK</td>
+                <td>250mg</td>
+                <td>$12</td>
+                <td><img src="pensicillin vk 250 mg.jpg" alt="Penicillin VK"></td>
+                <td><button onclick="addToCart('Penicillin VK', '250mg', 12, 'pensicillin vk 250 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Rifampicin</td>
+                <td>300mg</td>
+                <td>$25</td>
+                <td><img src="rifampicin 300 mg.jpg" alt="Rifampicin"></td>
+                <td><button onclick="addToCart('Rifampicin', '300mg', 25, 'rifampicin 300 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Tetracycline</td>
+                <td>500mg</td>
+                <td>$15</td>
+                <td><img src="tetracyclin 500 mg.jpg" alt="Tetracycline"></td>
+                <td><button onclick="addToCart('Tetracycline', '500mg', 15, 'tetracyclin 500 mg.jpg')">Add to Cart</button></td>
+            </tr>
+            <tr>
+                <td>Trimethoprim</td>
+                <td>200mg</td>
+                <td>$16</td>
+                <td><img src="trimethoprim 200mg.jpg" alt="Trimethoprim"></td>
+                <td><button onclick="addToCart('Trimethoprim', '200mg', 16, 'trimethoprim 200mg.jpg')">Add to Cart</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
